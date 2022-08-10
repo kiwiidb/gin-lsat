@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/getAlby/gin-lsat/ginlsat"
-	"github.com/getAlby/gin-lsat/ln"
+	"github.com/kiwiidb/gin-lsat/ginlsat"
+	"github.com/kiwiidb/gin-lsat/ln"
 
 	"github.com/appleboy/gofight/v2"
 	"github.com/gin-gonic/gin"

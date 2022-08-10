@@ -5,7 +5,7 @@ import (
 	"encoding/gob"
 	"fmt"
 
-	macaroonutils "github.com/getAlby/gin-lsat/macaroon"
+	macaroonutils "github.com/kiwiidb/gin-lsat/macaroon"
 
 	"github.com/lightningnetwork/lnd/lntypes"
 	"gopkg.in/macaroon.v2"

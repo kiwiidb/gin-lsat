@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/getAlby/gin-lsat/ln"
-	"github.com/getAlby/gin-lsat/lsat"
-	"github.com/getAlby/gin-lsat/macaroon"
-	macaroonutils "github.com/getAlby/gin-lsat/macaroon"
-	"github.com/getAlby/gin-lsat/utils"
+	"github.com/kiwiidb/gin-lsat/ln"
+	"github.com/kiwiidb/gin-lsat/lsat"
+	"github.com/kiwiidb/gin-lsat/macaroon"
+	macaroonutils "github.com/kiwiidb/gin-lsat/macaroon"
+	"github.com/kiwiidb/gin-lsat/utils"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"

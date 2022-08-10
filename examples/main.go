@@ -8,10 +8,10 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/getAlby/gin-lsat/ginlsat"
-	"github.com/getAlby/gin-lsat/ln"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
+	"github.com/kiwiidb/gin-lsat/ginlsat"
+	"github.com/kiwiidb/gin-lsat/ln"
 )
 
 const SATS_PER_BTC = 100000000

@@ -9,14 +9,14 @@ Assuming you've installed Go and Gin
 1. Run this:
 
 ```
-go get github.com/getAlby/gin-lsat
+go get github.com/kiwiidb/gin-lsat
 ```
 
 2. Create `.env` file (refer `.env_example`) and configure `LND_ADDRESS` and `MACAROON_HEX` for LND client or `LNURL_ADDRESS` for LNURL client, `LN_CLIENT_TYPE` (out of LND, LNURL) and `ROOT_KEY` (for minting macaroons).  
 
 ## Usage
 
-[This example](https://github.com/getAlby/gin-lsat/blob/main/examples/main.go) shows how to use Gin-LSAT for serving simple JSON response:-
+[This example](https://github.com/kiwiidb/gin-lsat/blob/main/examples/main.go) shows how to use Gin-LSAT for serving simple JSON response:-
 
 ```
 package main
@@ -29,8 +29,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/getAlby/gin-lsat/ginlsat"
-	"github.com/getAlby/gin-lsat/ln"
+	"github.com/kiwiidb/gin-lsat/ginlsat"
+	"github.com/kiwiidb/gin-lsat/ln"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
