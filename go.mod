@@ -1,4 +1,4 @@
-module github.com/getAlby/gin-lsat
+module github.com/kiwiidb/gin-lsat
 
 go 1.18
 
