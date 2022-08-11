@@ -60,24 +60,21 @@ func NewLsatMiddleware(lnClientConfig *ln.LNClientConfig,
 	return middleware, nil
 }
 
-func InitLnClient(lnClientConfig *ln.LNClientConfig) (ln.LNClient, error) {
-	var lnClient ln.LNClient
-
+func InitLnClient(lnClientConfig *ln.LNClientConfig) (lnClient ln.LNClient, err error) {
 	switch lnClientConfig.LNClientType {
 	case LND_CLIENT_TYPE:
-		lnClient, err := ln.NewLNDclient(lnClientConfig.LNDConfig)
+		lnClient, err = ln.NewLNDclient(lnClientConfig.LNDConfig)
 		if err != nil {
 			return lnClient, fmt.Errorf("Error initializing LN client: %s", err.Error())
 		}
 	case LNURL_CLIENT_TYPE:
-		lnClient, err := ln.NewLNURLClient(lnClientConfig.LNURLConfig)
+		lnClient, err = ln.NewLNURLClient(lnClientConfig.LNURLConfig)
 		if err != nil {
 			return lnClient, fmt.Errorf("Error initializing LN client: %s", err.Error())
 		}
 	default:
 		return lnClient, fmt.Errorf("LN Client type not recognized: %s", lnClientConfig.LNClientType)
 	}
-
 	return lnClient, nil
 }
 
